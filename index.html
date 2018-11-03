@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
 	<meta charset="UTF-8">
 	<title>МОЙ САЙТ</title>
 
@@ -11,49 +11,57 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" 
 	href="css/index.css">
 
 
-</head>
-<body>
-	<header>
-		<div class='logo'>
-			<img src="img/logo.png"
-			 alt="Logo" class="img_class">
-		</div>
-		<div class="menu">
-			<nav>
-				<ul>
-					<a href="#">
-						<li>ГЛАВНАЯ</li>
-					</a>
-					<a href="#">
-						<li>О НАС</li>
-					</a>
-					<a href="#">
-						<li>ТОВАРЫ</li>
-					</a>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	</head>
+	<body>
 
-	<section class=''>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand" style="padding:0;">
+				<img src="img/logo.png" alt="Logo" style='height: 100%;'>
+			</a>
+		</div>
+		<ul class='navbar-nav nav'>
+			<li class='active'><a href="#">Главная</a></li>
+			<li><a href="#">О Нас</a></li>
+			<li><a href="#">Товары</a></li>
+		</ul>
+		<form action="post" class="navbar-form navbar-right">
+
+			<div class='form-group'>
+				<div class='input-group'>
+					<input type="text" placeholder='Find' class='form-control'>
+					<div class="input-group-btn">
+						<button class='btn btn-primary '>
+							<i class="glyphicon glyphicon-search"></i>
+
+						</button>
+					</div>
+				</div>
+				
+			</div>
+			
+		</form>
+	</nav>
+	<section >
 		<div class="row">
-			<article class='col-md-4 col-sm-6 col-lg-10'>
+			<article class='col-md-4 col-sm-6 col-lg-10' style='display:flex;flex-direction: column'>
 			<div class='img_article'>
 				<img src="img/logo.png" 
 				alt="НОВОСТЬ">
 			</div>
-			<div>
+			<div style='flex:1;'>
 				f;sdkhklhlkkjgjhklh
 				f;sdkhklhlkkjgjhklh
 			</div>
 			<div>
-				<button class="btn btn-warning" style='background-color: red'>Подробнее...</button> Дата
+				<button class="btn btn-warning pull-right" style='background-color: red'>Подробнее...</button> Дата
 			</div>
 
 		</article>
@@ -104,5 +112,5 @@
 	<footer>
 		
 	</footer>
-</body>
-</html>
+	</body>
+	</html>
